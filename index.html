@@ -195,10 +195,12 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="relative min-h-[100vh] flex flex-col items-center justify-center pt-32 pb-20 px-6 overflow-hidden">
+    <!-- Added min-h-[85vh] for mobile so the background image isn't excessively cropped vertically -->
+    <section class="relative min-h-[85vh] lg:min-h-[100vh] flex flex-col items-center justify-center pt-32 pb-20 px-6 overflow-hidden">
         <!-- Background Space Image -->
         <div class="absolute inset-0 z-0">
-            <img src="https://github.com/agelmet/STREKLA/blob/main/1000016500.jpg?raw=true" alt="Hero Background Space" class="w-full h-full object-cover object-center opacity-80">
+            <!-- Adjusted object positioning to show the room better on mobile screens -->
+            <img src="https://github.com/agelmet/STREKLA/blob/main/1000016500.jpg?raw=true" alt="Hero Background Space" class="w-full h-full object-cover object-[center_top] md:object-center opacity-80">
         </div>
         
         <!-- Elegant Glass Overlay to keep the image visible but text readable -->
@@ -626,8 +628,6 @@
             <div class="grid md:grid-cols-2 lg:grid-cols-12 gap-12 mb-20">
                 
                 <div class="lg:col-span-5 reveal">
-                    <!-- Logo in Footer -->
-                    <img src="https://raw.githubusercontent.com/agelmet/STREKLA/refs/heads/main/strlogo.jpg" alt="Σοφία Στρέκλα Logo" class="h-16 w-16 object-contain rounded-full border-2 border-brand-pastelBlue bg-white mb-6">
                     <h3 class="text-3xl font-serif mb-4">Σοφία Στρέκλα</h3>
                     <p class="text-brand-light/70 font-light mb-8 max-w-sm leading-relaxed">
                         Η επούλωση ξεκινά με ένα βήμα. Επικοινωνήστε για να ορίσουμε την πρώτη σας συνεδρία σε ένα περιβάλλον απόλυτης αποδοχής.
@@ -668,16 +668,10 @@
                     
                     <div class="flex items-center gap-4">
                         <a href="https://www.facebook.com/profile.php?id=61557581917587" target="_blank" rel="noopener noreferrer" class="w-11 h-11 rounded-full bg-white flex items-center justify-center hover:scale-110 transition-transform shadow-md">
-                            <!-- Διατηρημένο αυθεντικό εικονίδιο -->
                             <img src="https://raw.githubusercontent.com/agelmet/Image-hosting-/refs/heads/main/icons8-facebook-480.png" alt="Facebook" class="w-6 h-6 object-contain">
                         </a>
-                        <a href="https://www.instagram.com/p/C3-RzQfIYip/?igsh=MXYyZmRtZXV0bDhy" target="_blank" rel="noopener noreferrer" class="w-11 h-11 rounded-full bg-white flex items-center justify-center hover:scale-110 transition-transform shadow-md">
-                            <!-- Διατηρημένο αυθεντικό εικονίδιο -->
+                        <a href="https://www.instagram.com/sofia_strekla_psy/" target="_blank" rel="noopener noreferrer" class="w-11 h-11 rounded-full bg-white flex items-center justify-center hover:scale-110 transition-transform shadow-md">
                             <img src="https://raw.githubusercontent.com/agelmet/Image-hosting-/refs/heads/main/instagram-logo-instagram-icon-transparent-free-png.png.webp" alt="Instagram" class="w-6 h-6 object-contain">
-                        </a>
-                        <a href="#" target="_blank" rel="noopener noreferrer" class="w-11 h-11 rounded-full bg-white flex items-center justify-center hover:scale-110 transition-transform shadow-md">
-                            <!-- Διατηρημένο αυθεντικό εικονίδιο -->
-                            <img src="https://raw.githubusercontent.com/agelmet/Image-hosting-/refs/heads/main/icons8-linkedin-480.png" alt="LinkedIn" class="w-6 h-6 object-contain">
                         </a>
                     </div>
                 </div>
