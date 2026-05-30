@@ -15,7 +15,7 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -163,7 +163,6 @@
     <nav class="fixed w-full z-50 transition-all duration-500 glass-nav" id="navbar">
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
             <a href="#" class="flex items-center group relative z-10">
-                <!-- Large, uncropped, circled logo -->
                 <img src="https://raw.githubusercontent.com/agelmet/STREKLA/refs/heads/main/strlogo.jpg" 
                      alt="Σοφία Στρέκλα Logo" 
                      class="h-16 w-16 md:h-20 md:w-20 object-contain rounded-full border-2 border-brand-300 logo-pulse bg-white">
@@ -195,40 +194,38 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="relative min-h-[100vh] flex items-center pt-32 pb-20 px-6 overflow-hidden">
+    <section class="relative min-h-[100vh] flex flex-col items-center justify-center pt-32 pb-20 px-6 overflow-hidden">
         <!-- Background Space Image -->
         <div class="absolute inset-0 z-0">
-            <img src="https://github.com/agelmet/STREKLA/blob/main/1000016500.jpg?raw=true" alt="Hero Background Space" class="w-full h-full object-cover object-center opacity-40">
+            <img src="https://github.com/agelmet/STREKLA/blob/main/1000016500.jpg?raw=true" alt="Hero Background Space" class="w-full h-full object-cover object-center opacity-80">
         </div>
         
-        <!-- Luxury Gradients for readability -->
-        <div class="absolute inset-0 bg-gradient-to-r from-[#fcfbfa]/95 via-[#fcfbfa]/80 to-transparent z-10"></div>
-        <div class="absolute inset-0 bg-brand-200/10 mix-blend-overlay z-10"></div>
+        <!-- Elegant Glass Overlay to keep the image visible but text readable -->
+        <div class="absolute inset-0 bg-white/30 backdrop-blur-[4px] z-10"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-[#fcfbfa] via-transparent to-transparent z-10"></div>
 
-        <div class="max-w-7xl mx-auto w-full grid lg:grid-cols-2 gap-16 items-center relative z-20">
+        <div class="max-w-4xl mx-auto w-full relative z-20 flex flex-col items-center text-center">
             <div class="reveal">
-                <div class="inline-flex items-center gap-3 px-5 py-2.5 rounded-full bg-white/60 border border-brand-300 text-brand-dark text-xs font-bold mb-8 shadow-sm backdrop-blur-sm no-accents tracking-widest">
+                <div class="inline-flex items-center gap-3 px-6 py-2.5 rounded-full bg-white/80 border border-brand-300 text-brand-dark text-sm font-bold mb-8 shadow-sm backdrop-blur-md no-accents tracking-[0.15em]">
                     <span class="w-2 h-2 rounded-full bg-brand-500 animate-pulse"></span>
-                    Ψυχολογος & Ψυχοθεραπευτρια
+                    ΨΥΧΟΛΟΓΟΣ & ΨΥΧΟΘΕΡΑΠΕΥΤΡΙΑ
                 </div>
-                <h1 class="text-5xl md:text-6xl lg:text-7xl font-serif text-brand-dark leading-[1.1] mb-8">
-                    Ρεαλιστικά Βήματα για μια <span class="italic text-brand-500">Λειτουργική</span> Καθημερινότητα.
+                <h1 class="text-5xl md:text-6xl lg:text-7xl font-serif text-brand-dark leading-[1.1] mb-8 drop-shadow-md">
+                    Ρεαλιστικά Βήματα για μια <br class="hidden md:block" /> <span class="italic text-brand-500">Λειτουργική</span> Καθημερινότητα.
                 </h1>
-                <p class="text-lg md:text-xl text-brand-text mb-12 max-w-lg leading-relaxed font-light">
+                <p class="text-lg md:text-xl text-brand-dark mb-12 max-w-2xl mx-auto leading-relaxed font-semibold drop-shadow-md">
                     Γνωσιακή Συμπεριφορική Ψυχοθεραπεία (CBT) προσαρμοσμένη στις δικές σας ανάγκες. Εξειδικευμένη υποστήριξη για εφήβους και ενήλικες, στην Πάτρα και διαδικτυακά.
                 </p>
-                <div class="flex flex-wrap items-center gap-6">
-                    <a href="#contact" class="px-10 py-5 bg-brand-dark text-brand-100 rounded-full font-medium hover:bg-brand-500 hover:text-white transition-all shadow-luxury flex items-center gap-3 group">
+                <div class="flex flex-wrap items-center justify-center gap-6">
+                    <a href="#contact" class="px-10 py-4 bg-brand-dark text-brand-100 rounded-full font-bold hover:bg-brand-500 hover:text-white transition-all shadow-luxury flex items-center gap-3 group">
                         ΕΠΙΚΟΙΝΩΝΙΑ
                         <i data-lucide="arrow-right" class="w-5 h-5 group-hover:translate-x-1 transition-transform"></i>
                     </a>
-                    <a href="#about" class="px-10 py-5 bg-transparent text-brand-dark rounded-full font-medium hover:text-brand-500 transition-all border border-brand-dark/20 hover:border-brand-500">
+                    <a href="#about" class="px-10 py-4 bg-white/70 text-brand-dark rounded-full font-bold hover:bg-white transition-all border border-brand-dark/20 hover:border-brand-500 backdrop-blur-sm shadow-sm">
                         ΓΝΩΡΙΣΤΕ ΜΑΣ
                     </a>
                 </div>
             </div>
-            <!-- Empty column to let the background image shine through on the right side -->
-            <div class="hidden lg:block"></div>
         </div>
     </section>
 
@@ -673,14 +670,14 @@
                     </div>
                     
                     <div class="flex items-center gap-4">
-                        <a href="https://www.facebook.com/profile.php?id=61557581917587" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-brand-100/10 flex items-center justify-center hover:bg-brand-500 transition-colors border border-brand-100/20">
-                            <img src="https://raw.githubusercontent.com/agelmet/Image-hosting-/refs/heads/main/icons8-facebook-480.png" alt="Facebook" class="w-5 h-5 filter invert">
+                        <a href="https://www.facebook.com/profile.php?id=61557581917587" target="_blank" rel="noopener noreferrer" class="w-11 h-11 rounded-full bg-white flex items-center justify-center hover:scale-110 transition-transform shadow-md">
+                            <img src="https://raw.githubusercontent.com/agelmet/Image-hosting-/refs/heads/main/icons8-facebook-480.png" alt="Facebook" class="w-6 h-6 object-contain">
                         </a>
-                        <a href="https://www.instagram.com/p/C3-RzQfIYip/?igsh=MXYyZmRtZXV0bDhy" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-brand-100/10 flex items-center justify-center hover:bg-brand-500 transition-colors border border-brand-100/20">
-                            <img src="https://raw.githubusercontent.com/agelmet/Image-hosting-/refs/heads/main/instagram-logo-instagram-icon-transparent-free-png.png.webp" alt="Instagram" class="w-5 h-5 filter invert opacity-90">
+                        <a href="https://www.instagram.com/p/C3-RzQfIYip/?igsh=MXYyZmRtZXV0bDhy" target="_blank" rel="noopener noreferrer" class="w-11 h-11 rounded-full bg-white flex items-center justify-center hover:scale-110 transition-transform shadow-md">
+                            <img src="https://raw.githubusercontent.com/agelmet/Image-hosting-/refs/heads/main/instagram-logo-instagram-icon-transparent-free-png.png.webp" alt="Instagram" class="w-6 h-6 object-contain">
                         </a>
-                        <a href="#" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-brand-100/10 flex items-center justify-center hover:bg-brand-500 transition-colors border border-brand-100/20">
-                            <img src="https://raw.githubusercontent.com/agelmet/Image-hosting-/refs/heads/main/icons8-linkedin-480.png" alt="LinkedIn" class="w-5 h-5 filter invert">
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="w-11 h-11 rounded-full bg-white flex items-center justify-center hover:scale-110 transition-transform shadow-md">
+                            <img src="https://raw.githubusercontent.com/agelmet/Image-hosting-/refs/heads/main/icons8-linkedin-480.png" alt="LinkedIn" class="w-6 h-6 object-contain">
                         </a>
                     </div>
                 </div>
