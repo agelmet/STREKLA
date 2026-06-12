@@ -9,18 +9,14 @@
     <meta name="author" content="Advon Media">
     <meta name="robots" content="index, follow">
     
-    <!-- Favicon -->
     <link rel="icon" href="https://raw.githubusercontent.com/agelmet/STREKLA/refs/heads/main/strlogo.jpg" type="image/jpeg">
 
-    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Tailwind Configuration -->
     <script>
         tailwind.config = {
             theme: {
@@ -67,7 +63,6 @@
         }
     </script>
 
-    <!-- Custom CSS -->
     <style>
         /* Base & Scrollbar */
         body { background-color: #f4f7fb; color: #4a4e69; }
@@ -154,13 +149,11 @@
 </head>
 <body class="antialiased overflow-x-hidden">
 
-    <!-- Global Background Elements (Pastel Blobs) -->
     <div class="fixed inset-0 z-[-1] pointer-events-none overflow-hidden">
         <div class="absolute top-[-10%] right-[-5%] w-[40vw] h-[40vw] rounded-full bg-brand-pastelBlue/30 mix-blend-multiply filter blur-[100px] animate-pulse-slow"></div>
         <div class="absolute bottom-[-10%] left-[-5%] w-[50vw] h-[50vw] rounded-full bg-brand-pastelLavender/30 mix-blend-multiply filter blur-[120px] animate-pulse-slow" style="animation-delay: 2s;"></div>
     </div>
 
-    <!-- Navigation -->
     <nav class="fixed w-full z-50 transition-all duration-500 glass-nav" id="navbar">
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
             <a href="#" class="flex items-center group relative z-10">
@@ -183,7 +176,6 @@
             </button>
         </div>
         
-        <!-- Mobile Menu -->
         <div id="mobile-menu" class="absolute top-full left-0 w-full bg-white/95 backdrop-blur-xl shadow-2xl hidden flex-col items-center py-10 space-y-8 border-t border-brand-light">
             <a href="#about" class="text-lg font-medium text-brand-dark mobile-link">Η ΨΥΧΟΛΟΓΟΣ</a>
             <a href="#services" class="text-lg font-medium text-brand-dark mobile-link">ΥΠΗΡΕΣΙΕΣ</a>
@@ -194,16 +186,11 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <!-- Added min-h-[85vh] for mobile so the background image isn't excessively cropped vertically -->
     <section class="relative min-h-[85vh] lg:min-h-[100vh] flex flex-col items-center justify-center pt-32 pb-20 px-6 overflow-hidden">
-        <!-- Background Space Image -->
         <div class="absolute inset-0 z-0">
-            <!-- Adjusted object positioning to show the room better on mobile screens -->
             <img src="https://github.com/agelmet/STREKLA/blob/main/1000016500.jpg?raw=true" alt="Hero Background Space" class="w-full h-full object-cover object-[center_top] md:object-center opacity-80">
         </div>
         
-        <!-- Elegant Glass Overlay to keep the image visible but text readable -->
         <div class="absolute inset-0 bg-white/30 backdrop-blur-[4px] z-10"></div>
         <div class="absolute inset-0 bg-gradient-to-t from-[#f4f7fb] via-transparent to-transparent z-10"></div>
 
@@ -217,7 +204,7 @@
                     Ρεαλιστικά Βήματα για μια <br class="hidden md:block" /> <span class="italic text-brand-primary">Λειτουργική</span> Καθημερινότητα.
                 </h1>
                 <p class="text-lg md:text-xl text-brand-dark mb-12 max-w-2xl mx-auto leading-relaxed font-semibold drop-shadow-md">
-                    Γνωσιακή Συμπεριφορική Ψυχοθεραπεία (CBT) προσαρμοσμένη στις δικές σας ανάγκες. Εξειδικευμένη υποστήριξη για εφήβους και ενήλικες, στην Πάτρα και διαδικτυακά.
+                    Γνωσιακή Συμπεριφορική Ψυχοθεραπεία (CBT) προσαρμοσμένη στις δικές σας ανάγκες. Η εξατομικευμένη ψυχοθεραπεία σάς προσφέρει την ευκαιρία να έρθετε σε επαφή με τον εαυτό σας, να ακούσετε τις σκέψεις σας, τα συναισθήματά σας και τις βαθύτερες ανάγκες σας.
                 </p>
                 <div class="flex flex-wrap items-center justify-center gap-6">
                     <a href="#contact" class="px-10 py-4 bg-brand-dark text-white rounded-full font-bold hover:bg-brand-primary transition-all shadow-luxury flex items-center gap-3 group">
@@ -232,7 +219,6 @@
         </div>
     </section>
 
-    <!-- About Section (The Psychologist) -->
     <section id="about" class="py-32 px-6 relative">
         <div class="max-w-7xl mx-auto grid lg:grid-cols-12 gap-16 items-center">
             
@@ -241,7 +227,6 @@
                     <img src="https://github.com/agelmet/STREKLA/blob/main/1000016495.jpg?raw=true" alt="Σοφία Στρέκλα" class="w-full h-full object-cover">
                     <div class="absolute inset-0 bg-gradient-to-t from-brand-dark/30 to-transparent"></div>
                 </div>
-                <!-- Decorative Elements -->
                 <div class="absolute -bottom-10 -right-10 w-40 h-40 bg-brand-pastelBlue rounded-full blur-[60px] z-0 animate-pulse-slow"></div>
             </div>
 
@@ -249,23 +234,25 @@
                 <h2 class="text-4xl md:text-5xl font-serif text-brand-dark mb-8">Γνωσιακή Συμπεριφορική Ψυχοθεραπεία (CBT)</h2>
                 <div class="space-y-6 text-lg text-brand-text font-light leading-relaxed">
                     <p>
-                        Η <strong>Σοφία Στρέκλα</strong> είναι αδειούχος Ψυχολόγος <em>(Αρ. Αδείας: ΠΔΕ/ΔΔYKMΠEAX/290753/5691)</em> και Ψυχοθεραπεύτρια, διατηρώντας το ιδιωτικό της γραφείο στην Πάτρα. Είναι απόφοιτη του Ευρωπαϊκού Πανεπιστημίου Κύπρου (EUC) και έχει ολοκληρώσει την εξειδίκευσή της στη Γνωσιακή Συμπεριφορική Ψυχοθεραπεία (CBT) στο πιστοποιημένο Κέντρο Εφαρμοσμένης Ψυχοθεραπείας και Συμβουλευτικής.
+                        Η Σοφία Στρέκλα είναι αδειούχος Ψυχολόγος (Αρ. Αδείας: ΠΔΕ/ΔΔΥΚΜΠΕΑΧ/290753/5691) και Ψυχοθεραπεύτρια με ιδιωτικό γραφείο στην Πάτρα.
                     </p>
                     <p>
-                        Η κλινική της ματιά διακρίνεται για την πρακτικότητα και τη συστηματικότητά της. Εργαζόμενη παράλληλα σε Κέντρο Ειδικών Θεραπειών, αναλαμβάνει το εξαιρετικά απαιτητικό έργο της ψυχολογικής αξιολόγησης και υποστήριξης. Η καθημερινή της τριβή σε δομές αποκατάστασης της έχει προσφέρει μια βαθιά κατανόηση του πώς να <strong>σπάει μεγάλα, χαώδη προβλήματα σε μικρούς, διαχειρίσιμους στόχους</strong>.
+                        Είναι απόφοιτη του Ευρωπαϊκού Πανεπιστημίου Κύπρου (European University Cyprus – EUC) και έχει εξειδικευτεί στη Γνωσιακή Συμπεριφορική Ψυχοθεραπεία (Cognitive Behavioral Therapy – CBT) στο πιστοποιημένο Κέντρο Εφαρμοσμένης Ψυχοθεραπείας και Συμβουλευτικής.
                     </p>
                     <p>
-                        Στο γραφείο της αναλαμβάνει εφήβους και ενήλικες. Με ενσυναίσθηση, επιστημονική κατάρτιση και χωρίς καμία διάθεση κριτικής, σας υποστηρίζει ενεργά στην αντιμετώπιση κρίσεων πανικού, διατροφικών διαταραχών, κατάθλιψης και θυμού.
+                        Στο πλαίσιο της θεραπευτικής διαδικασίας δίνει ιδιαίτερη έμφαση στη δημιουργία μιας σχέσης εμπιστοσύνης, αποδοχής και ασφάλειας, όπου κάθε άνθρωπος μπορεί να εκφραστεί ελεύθερα και να επεξεργαστεί τις δυσκολίες που αντιμετωπίζει χωρίς φόβο κριτικής.
+                    </p>
+                    <p>
+                        Με επιστημονική κατάρτιση, ενσυναίσθηση και σεβασμό στη μοναδικότητα του κάθε ατόμου, στόχος της είναι η ενίσχυση της ψυχικής ανθεκτικότητας, η ανάπτυξη λειτουργικών τρόπων αντιμετώπισης των προκλήσεων της ζωής και η ουσιαστική βελτίωση της ποιότητας ζωής.
                     </p>
                     <blockquote class="border-l-2 border-brand-primary pl-6 py-2 my-8 text-2xl font-serif text-brand-dark italic bg-brand-light/50 rounded-r-lg">
-                        "Ο τελικός στόχος δεν είναι απλώς η προσωρινή ανακούφιση, αλλά η ουσιαστική βελτίωση της ψυχικής υγείας και η πλήρης επαναφορά της καθημερινής λειτουργικότητας."
+                        «Η ψυχοθεραπεία δεν στοχεύει μόνο στην ανακούφιση από τα συμπτώματα, αλλά στην καλλιέργεια της αυτογνωσίας και στην ενδυνάμωση του ατόμου, ώστε να μπορεί να ανταποκρίνεται στις δυσκολίες της ζωής με μεγαλύτερη ισορροπία και αυτοπεποίθηση.»
                     </blockquote>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
     <section id="services" class="py-32 px-6 bg-brand-light/50 relative">
         <div class="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-brand-pastelBlue/50 to-transparent"></div>
         <div class="max-w-7xl mx-auto">
@@ -276,68 +263,47 @@
 
             <div class="grid md:grid-cols-2 gap-8">
                 
-                <!-- Service 1 -->
                 <div class="luxury-card p-10 md:p-12 rounded-[2rem] reveal relative overflow-hidden group">
                     <div class="absolute top-0 right-0 w-32 h-32 bg-brand-pastelBlue/20 rounded-full blur-[40px] group-hover:scale-150 transition-transform duration-700"></div>
                     <div class="relative z-10">
                         <i data-lucide="activity" class="w-10 h-10 text-brand-primary mb-8"></i>
-                        <h3 class="text-2xl font-serif text-brand-dark mb-4 font-bold">Διαχείριση Άγχους, Πανικού & Ψυχοσωματικών</h3>
-                        <p class="text-brand-text mb-8 font-light leading-relaxed">
-                            Ο πανικός, οι ειδικές φοβίες και το χρόνιο άγχος συχνά εκφράζονται με έντονα σωματικά συμπτώματα. Με τη μέθοδο CBT, εντοπίζουμε τα «σφάλματα» στον τρόπο που ο εγκέφαλος ερμηνεύει τον κίνδυνο και χτίζουμε πρακτικές τεχνικές αποφόρτισης για να ανακτήσετε τον έλεγχο στο «εδώ και τώρα».
+                        <h3 class="text-2xl font-serif text-brand-dark mb-4 font-bold">Αναπτυξιακές Διαταραχές</h3>
+                        <p class="text-brand-text font-light leading-relaxed">
+                            Οι αναπτυξιακές διαταραχές επηρεάζουν διαφορετικούς τομείς της ανάπτυξης, όπως η επικοινωνία, η κοινωνική αλληλεπίδραση, η μάθηση και η προσαρμογή στην καθημερινότητα. Μέσα από εξατομικευμένη ψυχολογική υποστήριξη, στόχος είναι η ενίσχυση των δεξιοτήτων του ατόμου, η αξιοποίηση των δυνατοτήτων του και η βελτίωση της λειτουργικότητάς του στην καθημερινή ζωή.
                         </p>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-4 py-1.5 bg-brand-bg text-brand-dark text-xs font-semibold rounded-full border border-brand-light">CBT - 50'</span>
-                            <span class="px-4 py-1.5 bg-brand-bg text-brand-dark text-xs font-semibold rounded-full border border-brand-light">Κρίσεις Πανικού</span>
-                            <span class="px-4 py-1.5 bg-brand-bg text-brand-dark text-xs font-semibold rounded-full border border-brand-light">Φοβίες</span>
-                        </div>
                     </div>
                 </div>
 
-                <!-- Service 2 -->
                 <div class="luxury-card p-10 md:p-12 rounded-[2rem] reveal reveal-delay-1 relative overflow-hidden group">
                     <div class="absolute top-0 right-0 w-32 h-32 bg-brand-pastelLavender/20 rounded-full blur-[40px] group-hover:scale-150 transition-transform duration-700"></div>
                     <div class="relative z-10">
                         <i data-lucide="sun" class="w-10 h-10 text-brand-primary mb-8"></i>
-                        <h3 class="text-2xl font-serif text-brand-dark mb-4 font-bold">Διαταραχές Διάθεσης, Κατάθλιψη & Θυμός</h3>
-                        <p class="text-brand-text mb-8 font-light leading-relaxed">
-                            Σε έναν ασφαλή χώρο, δουλεύουμε δομημένα για την αλλαγή των αρνητικών μοτίβων αυτοκριτικής. Ρυθμίζουμε τα έντονα συναισθήματα, επαναφέρουμε το κίνητρο για δραστηριότητες που αγαπούσατε και μαθαίνουμε τη διεκδικητική, λειτουργική έκφραση των αναγκών σας.
+                        <h3 class="text-2xl font-serif text-brand-dark mb-4 font-bold">Αγχώδεις Διαταραχές</h3>
+                        <p class="text-brand-text font-light leading-relaxed">
+                            Το άγχος, οι κρίσεις πανικού, οι φοβίες και τα ψυχοσωματικά συμπτώματα μπορούν να επηρεάσουν σημαντικά την καθημερινότητα και την αίσθηση ασφάλειας. Μέσα από τη Γνωσιακή Συμπεριφορική Θεραπεία (CBT), αναγνωρίζουμε τους παράγοντες που συντηρούν το άγχος και αναπτύσσουμε πρακτικές δεξιότητες διαχείρισης, με στόχο την ενίσχυση της αυτοπεποίθησης και την ανάκτηση του ελέγχου στην καθημερινή ζωή.
                         </p>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-4 py-1.5 bg-brand-bg text-brand-dark text-xs font-semibold rounded-full border border-brand-light">Κατάθλιψη - 50'</span>
-                            <span class="px-4 py-1.5 bg-brand-bg text-brand-dark text-xs font-semibold rounded-full border border-brand-light">Διαχείριση Θυμού</span>
-                        </div>
                     </div>
                 </div>
 
-                <!-- Service 3 -->
                 <div class="luxury-card p-10 md:p-12 rounded-[2rem] reveal relative overflow-hidden group">
                     <div class="absolute top-0 right-0 w-32 h-32 bg-brand-pastelPink/20 rounded-full blur-[40px] group-hover:scale-150 transition-transform duration-700"></div>
                     <div class="relative z-10">
                         <i data-lucide="users" class="w-10 h-10 text-brand-primary mb-8"></i>
-                        <h3 class="text-2xl font-serif text-brand-dark mb-4 font-bold">Διατροφικές Διαταραχές & Ψυχοθεραπεία Εφήβων</h3>
-                        <p class="text-brand-text mb-8 font-light leading-relaxed">
-                            Προσεγγίζουμε τους εφήβους με σεβασμό στον ρυθμό τους (συνεδρίες 45'). Εστιάζουμε στην αποσύνδεση της αξίας τους από την εικόνα σώματος και στο χτίσιμο μιας υγιούς αυτοεκτίμησης, υποστηρίζοντας απαιτητικές μεταβάσεις.
+                        <h3 class="text-2xl font-serif text-brand-dark mb-4 font-bold">Διαταραχές Διάθεσης, Κατάθλιψη & Συναισθηματικές Δυσκολίες</h3>
+                        <p class="text-brand-text font-light leading-relaxed">
+                            Η παρατεταμένη θλίψη, η απώλεια ενδιαφέροντος, οι έντονες εναλλαγές στη διάθεση ή η δυσκολία στη διαχείριση των συναισθημάτων μπορούν να επηρεάσουν σημαντικά την καθημερινότητα και την ποιότητα ζωής. Μέσα από ένα ασφαλές και υποστηρικτικό θεραπευτικό πλαίσιο, εργαζόμαστε για την κατανόηση των δυσκολιών, την ενίσχυση της συναισθηματικής ανθεκτικότητας και την αποκατάσταση της ψυχικής ισορροπίας.
                         </p>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-4 py-1.5 bg-brand-bg text-brand-dark text-xs font-semibold rounded-full border border-brand-light">Έφηβοι - 45'</span>
-                            <span class="px-4 py-1.5 bg-brand-bg text-brand-dark text-xs font-semibold rounded-full border border-brand-light">Διατροφικές Διαταραχές</span>
-                        </div>
                     </div>
                 </div>
 
-                <!-- Service 4 -->
                 <div class="luxury-card p-10 md:p-12 rounded-[2rem] reveal reveal-delay-1 relative overflow-hidden group">
                     <div class="absolute top-0 right-0 w-32 h-32 bg-brand-pastelBlue/20 rounded-full blur-[40px] group-hover:scale-150 transition-transform duration-700"></div>
                     <div class="relative z-10">
                         <i data-lucide="laptop" class="w-10 h-10 text-brand-primary mb-8"></i>
-                        <h3 class="text-2xl font-serif text-brand-dark mb-4 font-bold">Διαδικτυακή Ψυχοθεραπεία (Online)</h3>
-                        <p class="text-brand-text mb-8 font-light leading-relaxed">
-                            Αντιλαμβανόμενη τις σύγχρονες ανάγκες για ευελιξία, όλες οι υπηρεσίες παρέχονται και μέσω βιντεοκλήσης. Διατηρούμε την ίδια ακριβώς εχεμύθεια και επιστημονική δομή, φέρνοντας την υποστήριξη άμεσα στον προσωπικό σας χώρο.
+                        <h3 class="text-2xl font-serif text-brand-dark mb-4 font-bold">Διαταραχές Προσωπικότητας</h3>
+                        <p class="text-brand-text font-light leading-relaxed">
+                            Οι διαταραχές προσωπικότητας επηρεάζουν τον τρόπο με τον οποίο το άτομο αντιλαμβάνεται τον εαυτό του, σχετίζεται με τους άλλους και διαχειρίζεται τα συναισθήματά του. Μέσα από τη θεραπευτική διαδικασία, στόχος είναι η βαθύτερη κατανόηση των δυσκολιών, η ανάπτυξη πιο λειτουργικών τρόπων σκέψης και συμπεριφοράς και η βελτίωση των διαπροσωπικών σχέσεων και της ποιότητας ζωής.
                         </p>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-4 py-1.5 bg-brand-bg text-brand-dark text-xs font-semibold rounded-full border border-brand-light">Βιντεοκλήση - 50'</span>
-                            <span class="px-4 py-1.5 bg-brand-bg text-brand-dark text-xs font-semibold rounded-full border border-brand-light">Πλήρης Εχεμύθεια</span>
-                        </div>
                     </div>
                 </div>
 
@@ -345,7 +311,6 @@
         </div>
     </section>
 
-    <!-- Roadmap / Philosophy Section -->
     <section id="roadmap" class="py-32 px-6 bg-brand-dark text-white relative overflow-hidden">
         <div class="absolute inset-0 z-0">
             <div class="absolute top-[-20%] right-[-10%] w-[50vw] h-[50vw] rounded-full bg-brand-pastelBlue/10 blur-[120px]"></div>
@@ -362,10 +327,8 @@
             </div>
 
             <div class="relative space-y-16">
-                <!-- Center Line -->
                 <div class="hidden md:block absolute left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-brand-pastelBlue via-brand-pastelLavender to-transparent transform -translate-x-1/2 opacity-30"></div>
 
-                <!-- Step 1 -->
                 <div class="flex flex-col md:flex-row items-center justify-between w-full reveal group">
                     <div class="md:w-[45%] md:text-right pr-0 md:pr-12 mb-8 md:mb-0">
                         <h4 class="text-2xl font-serif font-bold text-white mb-3 group-hover:text-brand-pastelBlue transition-colors">Η Ψυχολογική Αξιολόγηση ως Θεμέλιο</h4>
@@ -379,7 +342,6 @@
                     <div class="md:w-[45%] hidden md:block"></div>
                 </div>
 
-                <!-- Step 2 -->
                 <div class="flex flex-col md:flex-row-reverse items-center justify-between w-full reveal group">
                     <div class="md:w-[45%] md:text-left pl-0 md:pl-12 mb-8 md:mb-0 text-center md:text-left">
                         <h4 class="text-2xl font-serif font-bold text-white mb-3 group-hover:text-brand-pastelLavender transition-colors">Στόχοι που Φαίνονται στην Πράξη</h4>
@@ -393,7 +355,6 @@
                     <div class="md:w-[45%] hidden md:block"></div>
                 </div>
 
-                <!-- Step 3 -->
                 <div class="flex flex-col md:flex-row items-center justify-between w-full reveal group">
                     <div class="md:w-[45%] md:text-right pr-0 md:pr-12 mb-8 md:mb-0">
                         <h4 class="text-2xl font-serif font-bold text-white mb-3 group-hover:text-brand-pastelBlue transition-colors">Γίνετε ο Θεραπευτής του Εαυτού σας</h4>
@@ -411,7 +372,6 @@
         </div>
     </section>
 
-    <!-- Space / Gallery Section -->
     <section id="space" class="py-32 px-6">
         <div class="max-w-7xl mx-auto">
             <div class="text-center mb-20 reveal">
@@ -420,7 +380,6 @@
                 <p class="text-brand-text font-light text-lg">Ένα ασφαλές, ήρεμο καταφύγιο στο κέντρο της Πάτρας.</p>
             </div>
 
-            <!-- Masonry-style Grid -->
             <div class="columns-1 sm:columns-2 lg:columns-3 gap-6 space-y-6">
                 
                 <button class="w-full break-inside-avoid rounded-2xl overflow-hidden group relative reveal shadow-md bg-white border border-brand-light" onclick="openLightbox('https://github.com/agelmet/STREKLA/blob/main/1000016504.jpg?raw=true')">
@@ -490,7 +449,6 @@
         </div>
     </section>
 
-    <!-- Lightbox Element -->
     <div id="lightbox" class="fixed inset-0 z-[100] flex items-center justify-center cursor-zoom-out" onclick="closeLightbox()">
         <button class="absolute top-6 right-6 text-brand-light hover:text-white transition-colors bg-brand-dark/50 p-2 rounded-full">
             <i data-lucide="x" class="w-8 h-8"></i>
@@ -498,7 +456,6 @@
         <img id="lightbox-img" src="" alt="Μεγέθυνση" class="max-w-[90vw] max-h-[90vh] object-contain rounded-lg shadow-2xl cursor-default border border-brand-pastelBlue/20" onclick="event.stopPropagation()">
     </div>
 
-    <!-- Reviews Section (Vertical Slider) -->
     <section id="reviews" class="py-32 bg-brand-light/50 overflow-hidden relative">
         <div class="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-brand-pastelBlue/50 to-transparent"></div>
         <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
@@ -515,11 +472,9 @@
                 </a>
             </div>
 
-            <!-- Vertical Marquee Slider -->
             <div class="reviews-wrapper reveal reveal-delay-1">
                 <div class="marquee-vertical-container animate-marquee-v">
                     
-                    <!-- Review Blocks -->
                     <div class="bg-white p-8 rounded-3xl shadow-luxury border border-brand-light relative">
                         <div class="flex justify-between items-start mb-4">
                             <div class="flex gap-1 text-yellow-500">
@@ -577,7 +532,6 @@
                         </div>
                     </div>
 
-                    <!-- Duplicates for seamless infinite scrolling loop -->
                     <div class="bg-white p-8 rounded-3xl shadow-luxury border border-brand-light relative" aria-hidden="true">
                         <div class="flex justify-between items-start mb-4">
                             <div class="flex gap-1 text-yellow-500">
@@ -620,7 +574,6 @@
         </div>
     </section>
 
-    <!-- Footer / Contact Section -->
     <footer id="contact" class="bg-brand-dark text-white pt-24 pb-8 relative overflow-hidden">
         <div class="absolute top-0 right-0 w-[40rem] h-[40rem] bg-brand-pastelBlue/5 rounded-full blur-3xl transform translate-x-1/2 -translate-y-1/2"></div>
         
@@ -687,7 +640,6 @@
         </div>
     </footer>
 
-    <!-- Scripts -->
     <script>
         // Initialize Lucide Icons
         lucide.createIcons();
